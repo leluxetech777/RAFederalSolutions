@@ -3,6 +3,11 @@
    Government-Grade Professional Services
    ============================================================ */
 
+// ─── JS-ENABLED FLAG ───
+// Signals the CSS that JS is running, so entrance/reveal animations engage.
+// Without this (JS blocked/failed), all content stays visible by default.
+document.documentElement.classList.add('js');
+
 // ─── PRELOADER ───
 const preloader = document.getElementById('preloader');
 if (preloader) {
