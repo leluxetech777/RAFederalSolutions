@@ -1,0 +1,14 @@
+{
+  "name": "ra-federal-solutions-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "RA Federal Solutions — Government-Grade Professional Services",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
+  }
+}

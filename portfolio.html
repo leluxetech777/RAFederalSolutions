@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Past Performance & Portfolio — RA Federal Solutions</title>
+  <meta name="description" content="Event highlights, training engagements, and project examples demonstrating RA Federal Solutions' capability across government, corporate, and technical engagements." />
+  <link rel="canonical" href="https://www.rafederalsolutions.com/portfolio.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .gallery-filter { display:flex; flex-wrap:wrap; gap:var(--space-2xs); margin-bottom:var(--space-xl); justify-content:center; }
+    .gallery-filter__btn { font-family:var(--font-mono); font-size:var(--text-xs); letter-spacing:0.08em; text-transform:uppercase; padding:0.6em 1.2em; border:1px solid var(--border); border-radius:100px; color:var(--charcoal-soft); transition:all var(--speed-fast); background:var(--white); }
+    .gallery-filter__btn:hover { border-color:var(--gold); color:var(--navy); }
+    .gallery-filter__btn.is-active { background:var(--navy); color:var(--gold-light); border-color:var(--navy); }
+    .portfolio-item { transition: opacity .35s var(--ease-out-expo), transform .35s var(--ease-out-expo); }
+    .portfolio-ph { width:100%; height:100%; display:grid; place-items:center; background:linear-gradient(150deg,var(--navy-darker),var(--navy)); position:relative; }
+    .portfolio-ph::after { content:''; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.05) 1px,transparent 1px); background-size:32px 32px; }
+    .portfolio-ph span { font-family:var(--font-display); font-size:2rem; color:rgba(201,168,76,0.7); position:relative; z-index:1; }
+  </style>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="credbar">
+    <div class="credbar__inner">
+      <div class="credbar__items">
+        <span class="credbar__item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg> Woman-Owned Small Business</span>
+        <span class="credbar__sep"></span>
+        <span class="credbar__item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg> WOSB / EDWOSB Certification In Progress</span>
+        <span class="credbar__sep"></span>
+        <span class="credbar__item"><svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg> California DGS / Cal eProcure Vendor (In Progress)</span>
+      </div>
+      <div class="credbar__contact"><a href="tel:+17635883877">763-588-3877</a><span class="credbar__sep"></span><a href="mailto:contracts@rafederalsolutions.com">contracts@rafederalsolutions.com</a></div>
+    </div>
+  </div>
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><span class="header__logo-mark">RA</span><span class="header__logo-text"><span class="header__logo-name">RA Federal Solutions</span><span class="header__logo-sub">Precision · Elegance · Compliance</span></span></a>
+      <nav class="header__nav">
+        <ul class="header__nav-links">
+          <li><a href="about.html" class="header__nav-link">About</a></li>
+          <li class="header__dropdown"><a href="services.html" class="header__nav-link">Services</a><div class="header__dropdown-menu"><a href="services.html#events" class="header__dropdown-link">Government Event Planning <span>Conferences · briefings · ceremonies</span></a><a href="services.html#training" class="header__dropdown-link">Training & Development <span>Workforce training · EPIC EMR</span></a><a href="services.html#engineering" class="header__dropdown-link">Engineering Consulting <span>Systems · compliance advisory</span></a><a href="services.html#pm" class="header__dropdown-link">Project Management <span>PMI/PMP program delivery</span></a></div></li>
+          <li><a href="government-contracting.html" class="header__nav-link">Contracting</a></li>
+          <li><a href="capability-statement.html" class="header__nav-link">Capabilities</a></li>
+          <li><a href="portfolio.html" class="header__nav-link">Past Performance</a></li>
+          <li><a href="resources.html" class="header__nav-link">Resources</a></li>
+          <li><a href="contact.html" class="header__nav-link">Contact</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn--primary header__cta">Request a Quote</a>
+      </nav>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="index.html" class="mobile-nav__link">Home</a><a href="about.html" class="mobile-nav__link">About</a><a href="services.html" class="mobile-nav__link">Services</a>
+    <div class="mobile-nav__sub"><a href="services.html#events" class="mobile-nav__sub-link">Government Event Planning</a><a href="services.html#training" class="mobile-nav__sub-link">Training & Development</a><a href="services.html#engineering" class="mobile-nav__sub-link">Engineering Consulting</a><a href="services.html#pm" class="mobile-nav__sub-link">Project Management</a></div>
+    <a href="government-contracting.html" class="mobile-nav__link">Government Contracting</a><a href="capability-statement.html" class="mobile-nav__link">Capability Statement</a><a href="portfolio.html" class="mobile-nav__link">Past Performance</a><a href="resources.html" class="mobile-nav__link">Resources</a><a href="contact.html" class="mobile-nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--primary mobile-nav__cta">Request a Quote</a>
+    <div class="mobile-nav__contact"><a href="tel:+17635883877">763-588-3877</a><a href="mailto:contracts@rafederalsolutions.com">contracts@rafederalsolutions.com</a><span>Murrieta, California</span></div>
+  </nav>
+
+  <main>
+    <section class="pagehero">
+      <div class="pagehero__grid-overlay"></div>
+      <div class="container pagehero__inner">
+        <span class="breadcrumb"><a href="index.html">Home</a> / Past Performance</span>
+        <h1>Past Performance</h1>
+        <p>A snapshot of the engagements, training programs, and projects that demonstrate our capability across government, corporate, and technical environments.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="gallery-filter">
+          <button class="gallery-filter__btn is-active" data-filter="all">All</button>
+          <button class="gallery-filter__btn" data-filter="events">Events</button>
+          <button class="gallery-filter__btn" data-filter="training">Training</button>
+          <button class="gallery-filter__btn" data-filter="pm">Project Management</button>
+          <button class="gallery-filter__btn" data-filter="engineering">Engineering</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item" data-category="pm"><div class="portfolio-ph"><span>Enterprise PM</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Project Management</span><span class="portfolio-item__title">Healthcare Program Delivery</span></div></div>
+          <div class="portfolio-item" data-category="training"><div class="portfolio-ph"><span>EPIC EMR</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Training</span><span class="portfolio-item__title">ClinDoc &amp; ASAP Training</span></div></div>
+          <div class="portfolio-item" data-category="events"><div class="portfolio-ph"><span>Summit</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Events</span><span class="portfolio-item__title">Professional Summit Coordination</span></div></div>
+          <div class="portfolio-item" data-category="engineering"><div class="portfolio-ph"><span>Systems</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Engineering</span><span class="portfolio-item__title">Defense Systems Engineering</span></div></div>
+          <div class="portfolio-item" data-category="events"><div class="portfolio-ph"><span>Ceremony</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Events</span><span class="portfolio-item__title">Recognition &amp; Award Ceremony</span></div></div>
+          <div class="portfolio-item" data-category="pm"><div class="portfolio-ph"><span>Aviation</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Project Management</span><span class="portfolio-item__title">Aviation Program Support</span></div></div>
+          <div class="portfolio-item" data-category="training"><div class="portfolio-ph"><span>Workforce</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Training</span><span class="portfolio-item__title">Multi-Track Workforce Training</span></div></div>
+          <div class="portfolio-item" data-category="events"><div class="portfolio-ph"><span>Briefing</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Events</span><span class="portfolio-item__title">Stakeholder &amp; Vendor Briefing</span></div></div>
+          <div class="portfolio-item" data-category="engineering"><div class="portfolio-ph"><span>Compliance</span></div><div class="portfolio-item__overlay"><span class="portfolio-item__cat">Engineering</span><span class="portfolio-item__title">Compliance Advisory Engagement</span></div></div>
+        </div>
+        <p class="form__note text-center mt-lg">Imagery placeholders shown — event and engagement photography will be added as approved for public release.</p>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="bg-gray">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Endorsements</span>
+          <h2>What Stakeholders Say</h2>
+          <p>Trust is earned in the details. Here's what those we've served have shared.</p>
+        </div>
+        <div class="testi-grid">
+          <div class="testi reveal">
+            <div class="testi__mark">&ldquo;</div>
+            <p class="testi__text">Thank you so much for everything you did. You took a lot of stress off of us and took charge with such professionalism. We are so grateful for you stepping in.</p>
+            <div class="testi__author">Event &amp; Family Stakeholder</div>
+            <div class="testi__role">Wedding &amp; Event Coordination</div>
+          </div>
+          <div class="testi reveal reveal-delay-1">
+            <div class="testi__mark">&ldquo;</div>
+            <p class="testi__text">Her structured, detail-oriented approach is exactly what complex programs need. Nothing slipped — every milestone was tracked and every risk was anticipated.</p>
+            <div class="testi__author">Program Stakeholder</div>
+            <div class="testi__role">Enterprise Project Management</div>
+          </div>
+          <div class="testi reveal reveal-delay-2">
+            <div class="testi__mark">&ldquo;</div>
+            <p class="testi__text">The training was organized, compliant, and delivered with real polish. Participants left confident — and so did leadership.</p>
+            <div class="testi__author">Training Sponsor</div>
+            <div class="testi__role">Healthcare Systems Training</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-band__glow"></div>
+      <div class="container">
+        <div class="cta-band__inner">
+          <span class="eyebrow label--light" style="justify-content:center;">Your Engagement, Next</span>
+          <h2>Let's Add Your Project to This Page</h2>
+          <p>Tell us your objectives and timeline. We'll bring the discipline, documentation, and polish to deliver it.</p>
+          <div class="cta-band__actions"><a href="contact.html" class="btn btn--primary btn--lg">Request a Quote</a><a href="capability-statement.html" class="btn btn--white btn--lg">View Capabilities</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-mark"><span class="header__logo-mark">RA</span><span class="footer__brand-name">RA Federal Solutions</span></div>
+          <p class="footer__brand-desc">A woman-owned professional services firm delivering government event planning, training, and engineering &amp; project management consulting where precision meets elegance.</p>
+          <div class="footer__social"><a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h14zM8.34 17V9.99H6V17h2.34zM7.17 8.96a1.36 1.36 0 100-2.72 1.36 1.36 0 000 2.72zM18 17v-3.84c0-2.05-1.1-3-2.56-3-1.18 0-1.71.65-2 1.11V9.99h-2.34V17h2.34v-3.92c0-.21 0-.42.06-.57.17-.42.55-.85 1.19-.85.84 0 1.17.64 1.17 1.57V17H18z"/></svg></a><a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58 0 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s0 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.65.07-4.85.07s-3.58 0-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92-.06-1.27-.07-1.65-.07-4.85s0-3.58.07-4.85C2.38 3.92 3.9 2.38 7.15 2.23 8.42 2.17 8.8 2.16 12 2.16z"/></svg></a></div>
+        </div>
+        <div><h4 class="footer__heading">Navigate</h4><a href="about.html" class="footer__link">About</a><a href="services.html" class="footer__link">Services</a><a href="portfolio.html" class="footer__link">Past Performance</a><a href="resources.html" class="footer__link">Resources</a><a href="contact.html" class="footer__link">Contact</a></div>
+        <div><h4 class="footer__heading">Contracting</h4><a href="government-contracting.html" class="footer__link">NAICS &amp; UNSPSC Codes</a><a href="government-contracting.html#certs" class="footer__link">Certifications</a><a href="capability-statement.html" class="footer__link">Capability Statement</a><a href="contact.html" class="footer__link">Request for Quote</a></div>
+        <div><h4 class="footer__heading">Contact</h4><p class="footer__contact-item"><a href="mailto:contracts@rafederalsolutions.com">contracts@rafederalsolutions.com</a></p><p class="footer__contact-item"><a href="tel:+17635883877">763-588-3877</a></p><p class="footer__contact-item">Murrieta, California</p><p class="footer__contact-item">Serving CA statewide &amp; federal agencies</p></div>
+      </div>
+      <div class="footer__bottom"><p class="footer__copyright">&copy; <span data-year>2026</span> RA Federal Solutions. All rights reserved.</p><div class="footer__credbar-mini"><span>Woman-Owned Small Business</span><span>WOSB/EDWOSB In Progress</span><span>Cal eProcure Vendor (In Progress)</span></div></div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
