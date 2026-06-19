@@ -32,7 +32,8 @@ npm run preview  # preview the production build
 - All tokens live at the top of `css/styles.css` (`:root`).
 
 ## Adding real assets
-- Drop event/founder photography into `assets/images/`. Decorative navy "RA" placeholders are used wherever photos will go (split sections, portfolio grid, blog cards) — swap the placeholder `<div>` for an `<img>` when images are ready.
+- Drop event/engagement photography into `assets/images/`. Decorative navy placeholders are used wherever photos will go (split sections) — swap the placeholder `<div>` for an `<img>` when images are ready.
+- Per client request, no founder headshot is used anywhere on the site.
 - Place the downloadable capability statement PDF in `assets/docs/` and point the "Download" buttons at it (currently the on-screen statement page handles print-to-PDF).
 
 ## To wire up before launch
